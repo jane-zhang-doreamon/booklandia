@@ -10,17 +10,16 @@ function BookList() {
   return (
     <>
       <div className="app">
-        <h1>Fullstack Boilerplate - with books!</h1>
+        <h1 style={{ fontSize: 50 }}>Booklandia</h1>
         <ul>
-          <p>Testing</p>
           {!isLoading && data && data.map((book) => (
             <li key={book.id}>
-              <div>{book.name}</div>
               <div>
-                <img src={book.picture} alt={`${book.name}`} />
-
+                <div>
+                  <img src={book.picture} alt={`${book.name}`} style={{ width: 200, }} />
+                </div>
+                <div>{book.name}</div>
               </div>
-
             </li>
           ))}
         </ul>
