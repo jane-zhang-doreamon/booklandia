@@ -1,0 +1,149 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: #FFC0CB; /* Light pink background */
+  padding: 10px;
+  border-radius: 10px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.navbar-link {
+  color: #03ADF0; /* Black text */
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  border: 5px solid #03ADF0;
+  
+}
+
+.navbar-link:hover {
+  background-color: #FF69B4; /* Hot pink background on hover */
+}
+
+
+
+.bookList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-left: 100px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.bookContainer {
+  width: 30%; /* Adjust the width as needed */
+  margin-bottom: 20px;
+}
+
+.book {
+  * Add border to each book container */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.picture img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.name {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.title {
+  font-size: 80px;
+  text-align: center;
+}
+
+/* addBookForm Style */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #FDE3A7; /* Light yellow background */
+  border-radius: 10px;
+  width: 80%;
+  margin: 0 auto;
+  
+}
+
+label {
+  font-size: 38px;
+  margin-bottom: 5px;
+  color: #FF6B6B; /* Coral color for labels */
+}
+
+input {
+  padding: 8px;
+  border: 1px solid #FF6B6B; /* Coral color border */
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 50px;
+}
+
+button {
+  background-color: #FF6B6B; /* Coral color background for the button */
+  color: #FFF; /* White text color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+button:hover {
+  background-color: #FF99A7; /* Lighter coral color background on hover */
+}
+
+.app {
+  background-color: #fae0e4;
+  padding-bottom: 300px;
+}
+
+.detailPage img {
+  width: 20%;
+  height: auto;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.detailTitle {
+  font-size: 50px;
+  text-align: center;
+  margin: 10px;
+}
+
+.detailName {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.detail-navbar-link {
+  color: #11100f; /* Black text */
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  border: 3px solid #FED037;
+ margin-right: 10px;
+}
+
+.detail-navbar-link:hover {
+  background-color: #F8AAC0; /* Hot pink background on hover */
+}
+

@@ -1,5 +1,6 @@
 import request from 'superagent'
 import { BookData, BookDraft } from '../../models/books'
+import { ReviewDraft } from '../../models/reviews'
 
 const rootUrl = '/api/v1'
 
@@ -19,4 +20,10 @@ export function getReviewsByBookId(bookId: number) {
     .then((res) => {
       return res.body
     })
+}
+
+export async function addReviewByBookId(bookId: number, newReview: ReviewDraft) {
+  return await request
+    .post(rootUrl + `/books/${bookId}/reviews`)
+    .send(newReview)
 }
